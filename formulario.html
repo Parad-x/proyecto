@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de ejemplo</title>
+  <style>
+    body {
+      background-color: #c7e8c9; /* Fondo de color verde pastel */
+      font-family: "Century Gothic", Arial, sans-serif; /* Tipo de letra Century Gothic */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="number"],
+    textarea {
+      border-radius: 8px; /* Bordes más curveados */
+      padding: 8px; /* Espacio interno alrededor de los campos */
+      margin-bottom: 10px; /* Espacio entre los campos */
+    }
+  </style>
+</head>
+<body>
+  <h2>Formulario de contacto</h2>
+
+  <form action="procesar.php" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
+
+    <label for="identificacion">Numero de Identificacion:</label>
+    <input type="text" id="identificacion" name="identificacion" required><br>
+
+    <label for="telefono">Numero de Telefono:</label>
+    <input type="number" id="telefono" name="telefono" required><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="30" required></textarea><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
